@@ -13,6 +13,8 @@
 		515402A52487F8E3005D3695 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 515402A42487F8E3005D3695 /* Assets.xcassets */; };
 		515402A82487F8E3005D3695 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 515402A72487F8E3005D3695 /* Preview Assets.xcassets */; };
 		515402AB2487F8E3005D3695 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 515402A92487F8E3005D3695 /* LaunchScreen.storyboard */; };
+		515402B32487FA0E005D3695 /* CredentialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515402B22487FA0E005D3695 /* CredentialView.swift */; };
+		515402B524884B03005D3695 /* Credential.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515402B424884B03005D3695 /* Credential.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		515402A72487F8E3005D3695 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		515402AA2487F8E3005D3695 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		515402AC2487F8E3005D3695 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		515402B22487FA0E005D3695 /* CredentialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialView.swift; sourceTree = "<group>"; };
+		515402B424884B03005D3695 /* Credential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credential.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				5154029E2487F8E2005D3695 /* AppDelegate.swift */,
 				515402A02487F8E2005D3695 /* SceneDelegate.swift */,
 				515402A22487F8E2005D3695 /* ContentView.swift */,
+				515402B22487FA0E005D3695 /* CredentialView.swift */,
+				515402B424884B03005D3695 /* Credential.swift */,
 				515402A42487F8E3005D3695 /* Assets.xcassets */,
 				515402A92487F8E3005D3695 /* LaunchScreen.storyboard */,
 				515402AC2487F8E3005D3695 /* Info.plist */,
@@ -147,6 +153,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5154029F2487F8E2005D3695 /* AppDelegate.swift in Sources */,
+				515402B32487FA0E005D3695 /* CredentialView.swift in Sources */,
+				515402B524884B03005D3695 /* Credential.swift in Sources */,
 				515402A12487F8E2005D3695 /* SceneDelegate.swift in Sources */,
 				515402A32487F8E2005D3695 /* ContentView.swift in Sources */,
 			);
