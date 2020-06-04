@@ -15,7 +15,25 @@
 		515402AB2487F8E3005D3695 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 515402A92487F8E3005D3695 /* LaunchScreen.storyboard */; };
 		515402B32487FA0E005D3695 /* CredentialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515402B22487FA0E005D3695 /* CredentialView.swift */; };
 		515402B524884B03005D3695 /* Credential.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515402B424884B03005D3695 /* Credential.swift */; };
+		515402C02488DF95005D3695 /* libYubiKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 515402BD2488DF3E005D3695 /* libYubiKit.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		515402BC2488DF3E005D3695 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 515402B72488DF3E005D3695 /* YubiKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 95C29611206247210091318B;
+			remoteInfo = YubiKit;
+		};
+		515402BE2488DF3E005D3695 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 515402B72488DF3E005D3695 /* YubiKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 95885B2520A3187700828D02;
+			remoteInfo = YubiKitTests;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		5154029B2487F8E2005D3695 /* SimpleOATHSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleOATHSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -28,6 +46,9 @@
 		515402AC2487F8E3005D3695 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		515402B22487FA0E005D3695 /* CredentialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialView.swift; sourceTree = "<group>"; };
 		515402B424884B03005D3695 /* Credential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credential.swift; sourceTree = "<group>"; };
+		515402B72488DF3E005D3695 /* YubiKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = YubiKit.xcodeproj; path = YubiKit/YubiKit/YubiKit.xcodeproj; sourceTree = SOURCE_ROOT; };
+		515402C22488E141005D3695 /* SimpleOATHSwiftUI-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimpleOATHSwiftUI-Bridging-Header.h"; sourceTree = "<group>"; };
+		515402C32488E2BE005D3695 /* SimpleOATHSwiftUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SimpleOATHSwiftUI.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				515402C02488DF95005D3695 /* libYubiKit.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +68,7 @@
 			children = (
 				5154029D2487F8E2005D3695 /* SimpleOATHSwiftUI */,
 				5154029C2487F8E2005D3695 /* Products */,
+				515402B62488DF28005D3695 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +83,7 @@
 		5154029D2487F8E2005D3695 /* SimpleOATHSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				515402C32488E2BE005D3695 /* SimpleOATHSwiftUI.entitlements */,
 				5154029E2487F8E2005D3695 /* AppDelegate.swift */,
 				515402A02487F8E2005D3695 /* SceneDelegate.swift */,
 				515402A22487F8E2005D3695 /* ContentView.swift */,
@@ -68,6 +92,7 @@
 				515402A42487F8E3005D3695 /* Assets.xcassets */,
 				515402A92487F8E3005D3695 /* LaunchScreen.storyboard */,
 				515402AC2487F8E3005D3695 /* Info.plist */,
+				515402C22488E141005D3695 /* SimpleOATHSwiftUI-Bridging-Header.h */,
 				515402A62487F8E3005D3695 /* Preview Content */,
 			);
 			path = SimpleOATHSwiftUI;
@@ -79,6 +104,23 @@
 				515402A72487F8E3005D3695 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		515402B62488DF28005D3695 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				515402B72488DF3E005D3695 /* YubiKit.xcodeproj */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		515402B82488DF3E005D3695 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				515402BD2488DF3E005D3695 /* libYubiKit.a */,
+				515402BF2488DF3E005D3695 /* YubiKitTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,12 +169,35 @@
 			mainGroup = 515402922487F8E1005D3695;
 			productRefGroup = 5154029C2487F8E2005D3695 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 515402B82488DF3E005D3695 /* Products */;
+					ProjectRef = 515402B72488DF3E005D3695 /* YubiKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				5154029A2487F8E2005D3695 /* SimpleOATHSwiftUI */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		515402BD2488DF3E005D3695 /* libYubiKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libYubiKit.a;
+			remoteRef = 515402BC2488DF3E005D3695 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		515402BF2488DF3E005D3695 /* YubiKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = YubiKitTests.xctest;
+			remoteRef = 515402BE2488DF3E005D3695 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		515402992487F8E2005D3695 /* Resources */ = {
@@ -224,12 +289,15 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "./YubiKit/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "./SimpleOATHSwiftUI/SimpleOATHSwiftUI-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -278,11 +346,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "./YubiKit/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "./SimpleOATHSwiftUI/SimpleOATHSwiftUI-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -292,6 +363,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SimpleOATHSwiftUI/SimpleOATHSwiftUI.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SimpleOATHSwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = JQ24ZDH48X;
@@ -312,6 +384,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SimpleOATHSwiftUI/SimpleOATHSwiftUI.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SimpleOATHSwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = JQ24ZDH48X;
