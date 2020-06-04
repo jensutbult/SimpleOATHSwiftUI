@@ -16,6 +16,7 @@
 		515402B32487FA0E005D3695 /* CredentialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515402B22487FA0E005D3695 /* CredentialView.swift */; };
 		515402B524884B03005D3695 /* Credential.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515402B424884B03005D3695 /* Credential.swift */; };
 		515402C02488DF95005D3695 /* libYubiKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 515402BD2488DF3E005D3695 /* libYubiKit.a */; };
+		515402C82488E6FC005D3695 /* YubiKitWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515402C72488E6FC005D3695 /* YubiKitWrapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		515402B72488DF3E005D3695 /* YubiKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = YubiKit.xcodeproj; path = YubiKit/YubiKit/YubiKit.xcodeproj; sourceTree = SOURCE_ROOT; };
 		515402C22488E141005D3695 /* SimpleOATHSwiftUI-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimpleOATHSwiftUI-Bridging-Header.h"; sourceTree = "<group>"; };
 		515402C32488E2BE005D3695 /* SimpleOATHSwiftUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SimpleOATHSwiftUI.entitlements; sourceTree = "<group>"; };
+		515402C72488E6FC005D3695 /* YubiKitWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YubiKitWrapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				515402A22487F8E2005D3695 /* ContentView.swift */,
 				515402B22487FA0E005D3695 /* CredentialView.swift */,
 				515402B424884B03005D3695 /* Credential.swift */,
+				515402C72488E6FC005D3695 /* YubiKitWrapper.swift */,
 				515402A42487F8E3005D3695 /* Assets.xcassets */,
 				515402A92487F8E3005D3695 /* LaunchScreen.storyboard */,
 				515402AC2487F8E3005D3695 /* Info.plist */,
@@ -218,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5154029F2487F8E2005D3695 /* AppDelegate.swift in Sources */,
+				515402C82488E6FC005D3695 /* YubiKitWrapper.swift in Sources */,
 				515402B32487FA0E005D3695 /* CredentialView.swift in Sources */,
 				515402B524884B03005D3695 /* Credential.swift in Sources */,
 				515402A12487F8E2005D3695 /* SceneDelegate.swift in Sources */,

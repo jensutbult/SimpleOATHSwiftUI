@@ -13,16 +13,16 @@ struct CredentialView: View {
     let credential: Credential
     
     var body: some View {
-        HStack {
-            Text(credential.issuer ?? "").font(.headline)
-            Spacer()
-            Text(credential.account).font(.headline)
-            }.padding(10)
+        VStack(alignment: .leading) {
+            Text(credential.otp ?? "*** ***").font(.title)
+            Text("\(credential.issuer ?? "") \(credential.account)").font(.headline).foregroundColor(.gray)
+        }.padding(10)
     }
 }
 
+
 struct CredentialView_Previews: PreviewProvider {
     static var previews: some View {
-        CredentialView(credential: Credential(issuer: "Yubico", account: "jens.utbult@yubico.com"))
+        CredentialView(credential: Credential(issuer: "Behemoth", account: "camina.drummer@gmail.com", otp: "123123"))
     }
 }
