@@ -26,12 +26,12 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         var contentView = ContentView()
-        contentView.credentials = [Credential(issuer: "Yubico", account: "vir.cotto@gmail.com"),
-                                   Credential(issuer: "Yubico", account: "londo.molari@gmail.com"),
-                                   Credential(issuer: "Yubico", account: "amos.burton@gmail.com"),
-                                   Credential(issuer: "Yubico", account: "camina.drummer@gmail.com"),
-                                   Credential(issuer: "Yubico", account: "clarissa.mao@gmail.com"),
-                                   Credential(issuer: "Yubico", account: "naomi.nagata@gmail.com")]
+        contentView.credentials = [Credential(issuer: "Behemoth", account: "camina.drummer@gmail.com"),
+                                   Credential(issuer: "Tachi", account: "amos.burton@gmail.com"),
+                                   Credential(issuer: "Razorback", account: "clarissa.mao@gmail.com"),
+                                   Credential(issuer: "Canterbury", account: "naomi.nagata@gmail.com"),
+                                   Credential(issuer: "ISA Excalibur", account: "vir.cotto@gmail.com"),
+                                   Credential(issuer: "White Star 1", account: "londo.molari@gmail.com")]
         return contentView
     }
 }
