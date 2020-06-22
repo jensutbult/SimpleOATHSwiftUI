@@ -36,6 +36,9 @@ extension YubiKitManager {
                 return nil
             }
             }.removeDuplicates()
+        if YubiKitDeviceCapabilities.supportsMFIAccessoryKey {
+            accessorySession.startSession()
+        }
         
         return nfc.merge(with: accessory).shareReplay(1).eraseToAnyPublisher()
     }

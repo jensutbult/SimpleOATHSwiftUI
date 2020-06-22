@@ -13,6 +13,8 @@ struct ContentView: View {
     
     @ObservedObject var yubiKit: YubiKitWrapper
     
+    var foo = Yubikey.shared.oathService.credentials.sink { print("🦠 Credentials: \($0)") }
+    
     var body: some View {
         NavigationView {
             List {
