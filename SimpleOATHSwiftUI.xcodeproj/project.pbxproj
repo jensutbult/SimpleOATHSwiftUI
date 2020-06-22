@@ -17,6 +17,12 @@
 		515402B524884B03005D3695 /* Credential.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515402B424884B03005D3695 /* Credential.swift */; };
 		515402C02488DF95005D3695 /* libYubiKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 515402BD2488DF3E005D3695 /* libYubiKit.a */; };
 		515402C82488E6FC005D3695 /* YubiKitWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515402C72488E6FC005D3695 /* YubiKitWrapper.swift */; };
+		516D4B0C249B4FDD0069D3E3 /* Yubikey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516D4B0B249B4FDD0069D3E3 /* Yubikey.swift */; };
+		516D4B0E249B50740069D3E3 /* FIDO2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516D4B0D249B50740069D3E3 /* FIDO2.swift */; };
+		516D4B10249B50BF0069D3E3 /* OATH.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516D4B0F249B50BF0069D3E3 /* OATH.swift */; };
+		516D4B12249B511B0069D3E3 /* MGMT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516D4B11249B511B0069D3E3 /* MGMT.swift */; };
+		516D4B14249B77EF0069D3E3 /* YubiKitManager+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516D4B13249B77EF0069D3E3 /* YubiKitManager+Extensions.swift */; };
+		516D4B17249B94120069D3E3 /* Publisher+ShareReplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516D4B16249B94120069D3E3 /* Publisher+ShareReplay.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,12 @@
 		515402C22488E141005D3695 /* SimpleOATHSwiftUI-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimpleOATHSwiftUI-Bridging-Header.h"; sourceTree = "<group>"; };
 		515402C32488E2BE005D3695 /* SimpleOATHSwiftUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SimpleOATHSwiftUI.entitlements; sourceTree = "<group>"; };
 		515402C72488E6FC005D3695 /* YubiKitWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YubiKitWrapper.swift; sourceTree = "<group>"; };
+		516D4B0B249B4FDD0069D3E3 /* Yubikey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yubikey.swift; sourceTree = "<group>"; };
+		516D4B0D249B50740069D3E3 /* FIDO2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FIDO2.swift; sourceTree = "<group>"; };
+		516D4B0F249B50BF0069D3E3 /* OATH.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OATH.swift; sourceTree = "<group>"; };
+		516D4B11249B511B0069D3E3 /* MGMT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MGMT.swift; sourceTree = "<group>"; };
+		516D4B13249B77EF0069D3E3 /* YubiKitManager+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "YubiKitManager+Extensions.swift"; sourceTree = "<group>"; };
+		516D4B16249B94120069D3E3 /* Publisher+ShareReplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+ShareReplay.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +97,7 @@
 		5154029D2487F8E2005D3695 /* SimpleOATHSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				516D4B08249B4FC90069D3E3 /* Wrapper */,
 				515402C32488E2BE005D3695 /* SimpleOATHSwiftUI.entitlements */,
 				5154029E2487F8E2005D3695 /* AppDelegate.swift */,
 				515402A02487F8E2005D3695 /* SceneDelegate.swift */,
@@ -124,6 +137,27 @@
 				515402BF2488DF3E005D3695 /* YubiKitTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		516D4B08249B4FC90069D3E3 /* Wrapper */ = {
+			isa = PBXGroup;
+			children = (
+				516D4B15249B93CC0069D3E3 /* Combine */,
+				516D4B0B249B4FDD0069D3E3 /* Yubikey.swift */,
+				516D4B0D249B50740069D3E3 /* FIDO2.swift */,
+				516D4B0F249B50BF0069D3E3 /* OATH.swift */,
+				516D4B11249B511B0069D3E3 /* MGMT.swift */,
+				516D4B13249B77EF0069D3E3 /* YubiKitManager+Extensions.swift */,
+			);
+			path = Wrapper;
+			sourceTree = "<group>";
+		};
+		516D4B15249B93CC0069D3E3 /* Combine */ = {
+			isa = PBXGroup;
+			children = (
+				516D4B16249B94120069D3E3 /* Publisher+ShareReplay.swift */,
+			);
+			path = Combine;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,11 +255,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				5154029F2487F8E2005D3695 /* AppDelegate.swift in Sources */,
+				516D4B0C249B4FDD0069D3E3 /* Yubikey.swift in Sources */,
 				515402C82488E6FC005D3695 /* YubiKitWrapper.swift in Sources */,
 				515402B32487FA0E005D3695 /* CredentialView.swift in Sources */,
+				516D4B10249B50BF0069D3E3 /* OATH.swift in Sources */,
 				515402B524884B03005D3695 /* Credential.swift in Sources */,
 				515402A12487F8E2005D3695 /* SceneDelegate.swift in Sources */,
+				516D4B17249B94120069D3E3 /* Publisher+ShareReplay.swift in Sources */,
+				516D4B12249B511B0069D3E3 /* MGMT.swift in Sources */,
 				515402A32487F8E2005D3695 /* ContentView.swift in Sources */,
+				516D4B0E249B50740069D3E3 /* FIDO2.swift in Sources */,
+				516D4B14249B77EF0069D3E3 /* YubiKitManager+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

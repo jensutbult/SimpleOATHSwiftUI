@@ -9,8 +9,6 @@
 import Combine
 import SwiftUI
 
-extension String: Error {}
-
 class YubiKitWrapper: ObservableObject {
     
     @Published var credentials = [Credential]()
@@ -23,17 +21,24 @@ class YubiKitWrapper: ObservableObject {
             self.activeError = nil
         })
     }
+    
+    let yubikey = Yubikey.shared
 
     private var sessionObserver: NSKeyValueObservation? = nil
 
     init() {
+        
+
+        /*
         // Can't do key value observation on the protocol so we have to cast it to its concrete implementation
         guard let session = YubiKitManager.shared.nfcSession as? YKFNFCSession else { return }
-        
+        guard let session2 = YubiKitManager.shared.accessorySession as? YKFAccessorySession else { return }
+
         // Observe changes to the nfc session
         sessionObserver = session.observe(\.iso7816SessionState) { [weak self] session, change in
             // If session state is open unwrap the YKFKeyOATHServiceProtocol
             if session.iso7816SessionState == .open, let service = session.oathService {
+                print("got session")
                 let request = YKFKeyOATHCalculateAllRequest(timestamp: Date().addingTimeInterval(10))
                 service.execute(request!) { [weak self] (response, error) in
                     defer { YubiKitManager.shared.nfcSession.stopIso7816Session() }
@@ -53,6 +58,7 @@ class YubiKitWrapper: ObservableObject {
                 }
             }
         }
+ */
     }
     
     func refreshList() {
