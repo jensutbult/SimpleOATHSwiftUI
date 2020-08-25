@@ -13,7 +13,19 @@ extension YubiKitManager {
     enum Session: Equatable {
         case NFC(YKFNFCSession)
         case Accessory(YKFAccessorySession)
+        
+        var oathService: YKFKeyOATHServiceProtocol? {
+            switch self {
+            case .NFC(let service):
+                return service.oathService
+            case .Accessory(let service):
+                return service.oathService
+            }
+        }
     }
+    
+
+    
 }
 
 extension YubiKitManager {

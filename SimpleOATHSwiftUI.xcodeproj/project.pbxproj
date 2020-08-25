@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		51003CAD24EFB690004CE043 /* Future+Bag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51003CAC24EFB690004CE043 /* Future+Bag.swift */; };
 		5154029F2487F8E2005D3695 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5154029E2487F8E2005D3695 /* AppDelegate.swift */; };
 		515402A12487F8E2005D3695 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515402A02487F8E2005D3695 /* SceneDelegate.swift */; };
 		515402A32487F8E2005D3695 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515402A22487F8E2005D3695 /* ContentView.swift */; };
@@ -23,6 +24,8 @@
 		516D4B12249B511B0069D3E3 /* MGMT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516D4B11249B511B0069D3E3 /* MGMT.swift */; };
 		516D4B14249B77EF0069D3E3 /* YubiKitManager+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516D4B13249B77EF0069D3E3 /* YubiKitManager+Extensions.swift */; };
 		516D4B17249B94120069D3E3 /* Publisher+ShareReplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516D4B16249B94120069D3E3 /* Publisher+ShareReplay.swift */; };
+		5182D96A24EA7ACC005EDB60 /* OATHSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5182D96924EA7ACC005EDB60 /* OATHSession.swift */; };
+		5184C62724A347EB00E102DA /* OATHViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5184C62624A347EB00E102DA /* OATHViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		51003CAC24EFB690004CE043 /* Future+Bag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Future+Bag.swift"; sourceTree = "<group>"; };
 		5154029B2487F8E2005D3695 /* SimpleOATHSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleOATHSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5154029E2487F8E2005D3695 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		515402A02487F8E2005D3695 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 		516D4B11249B511B0069D3E3 /* MGMT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MGMT.swift; sourceTree = "<group>"; };
 		516D4B13249B77EF0069D3E3 /* YubiKitManager+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "YubiKitManager+Extensions.swift"; sourceTree = "<group>"; };
 		516D4B16249B94120069D3E3 /* Publisher+ShareReplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+ShareReplay.swift"; sourceTree = "<group>"; };
+		5182D96924EA7ACC005EDB60 /* OATHSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OATHSession.swift; sourceTree = "<group>"; };
+		5184C62624A347EB00E102DA /* OATHViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OATHViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,7 +152,9 @@
 				516D4B0B249B4FDD0069D3E3 /* Yubikey.swift */,
 				516D4B0D249B50740069D3E3 /* FIDO2.swift */,
 				516D4B0F249B50BF0069D3E3 /* OATH.swift */,
+				5182D96924EA7ACC005EDB60 /* OATHSession.swift */,
 				516D4B11249B511B0069D3E3 /* MGMT.swift */,
+				5184C62624A347EB00E102DA /* OATHViewModel.swift */,
 				516D4B13249B77EF0069D3E3 /* YubiKitManager+Extensions.swift */,
 			);
 			path = Wrapper;
@@ -156,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				516D4B16249B94120069D3E3 /* Publisher+ShareReplay.swift */,
+				51003CAC24EFB690004CE043 /* Future+Bag.swift */,
 			);
 			path = Combine;
 			sourceTree = "<group>";
@@ -257,13 +266,16 @@
 				5154029F2487F8E2005D3695 /* AppDelegate.swift in Sources */,
 				516D4B0C249B4FDD0069D3E3 /* Yubikey.swift in Sources */,
 				515402C82488E6FC005D3695 /* YubiKitWrapper.swift in Sources */,
+				5184C62724A347EB00E102DA /* OATHViewModel.swift in Sources */,
 				515402B32487FA0E005D3695 /* CredentialView.swift in Sources */,
 				516D4B10249B50BF0069D3E3 /* OATH.swift in Sources */,
+				5182D96A24EA7ACC005EDB60 /* OATHSession.swift in Sources */,
 				515402B524884B03005D3695 /* Credential.swift in Sources */,
 				515402A12487F8E2005D3695 /* SceneDelegate.swift in Sources */,
 				516D4B17249B94120069D3E3 /* Publisher+ShareReplay.swift in Sources */,
 				516D4B12249B511B0069D3E3 /* MGMT.swift in Sources */,
 				515402A32487F8E2005D3695 /* ContentView.swift in Sources */,
+				51003CAD24EFB690004CE043 /* Future+Bag.swift in Sources */,
 				516D4B0E249B50740069D3E3 /* FIDO2.swift in Sources */,
 				516D4B14249B77EF0069D3E3 /* YubiKitManager+Extensions.swift in Sources */,
 			);

@@ -15,6 +15,7 @@ struct Password {}
 
 class Yubikey {
     static let shared = Yubikey()
+    
     let oathService: OATHService
     let fido2Service: FIDO2Service
     let mgmtService = MGMTService()
@@ -30,9 +31,9 @@ class Yubikey {
         oathService = OATHService(session: session)
         fido2Service = FIDO2Service(session: session)
         
-        cancellable = session.sink { session in
-            print(session)
-        }
+//        cancellable = session.sink { session in
+//            print("🦠 Session: \(String(describing: session))")
+//        }
     }
 }
 
