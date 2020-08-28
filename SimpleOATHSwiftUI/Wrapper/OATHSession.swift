@@ -49,7 +49,6 @@ class OATHSession: YubikeySession {
     func delete(credential: Credential) -> Future<Void, Error> {
         Future { [service] completion in
             let request = YKFKeyOATHDeleteRequest(credential: YKFOATHCredential(account: credential.account, issuer: credential.issuer!))!
-//            let request = YKFKeyOATHDeleteRequest(credential: YKFOATHCredential(account: "no such account", issuer: credential.issuer!))!
             service.execute(request) { error in
                 if let error = error {
                     completion(.failure(error))

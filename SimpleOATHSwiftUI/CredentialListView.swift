@@ -9,7 +9,7 @@
 import SwiftUI
 import Combine
 
-struct ContentView: View {
+struct CredentialListView: View {
     @ObservedObject var oathViewModel: OATHViewModel
     
     var body: some View {
@@ -30,17 +30,13 @@ struct ContentView: View {
     
     func delete(at offsets: IndexSet) {
         let credentialsToDelete = offsets.map { oathViewModel.credentials[$0] }
-        oathViewModel.deleteCredentials(credentialsToDelete)
-//        oathViewModel.credentials(elements: offsets)
-//        oathViewModel.credentials.remove(atOffsets: offsets)
-//        print(offsets.first)
-//        let credential = oathViewModel.credentials[offsets]
-        print("delete")
+        guard let credential = credentialsToDelete.first else { return }
+        oathViewModel.delete(credential: credential)
     }
     
     func addCredential() {
-        let uniqueId = arc4random() % 100
-        let credential = Credential(issuer: "Yubico", account: "jens.utbult+\(uniqueId)@yubico.com", otp: nil)
+        let randomNumber = arc4random() % 100
+        let credential = Credential(issuer: "Yubico", account: "jens.utbult+\(randomNumber)@yubico.com", otp: nil)
         oathViewModel.putCredential(credential)
     }
 }
@@ -48,8 +44,8 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        let previewViewModel = OATHViewModel()
+        let previewViewModel = OATHViewModel(service: Yubikey.shared.oathService)
         previewViewModel.credentials = Credential.testCredentials()
-        return ContentView(oathViewModel: previewViewModel)
+        return CredentialListView(oathViewModel: previewViewModel)
     }
 }

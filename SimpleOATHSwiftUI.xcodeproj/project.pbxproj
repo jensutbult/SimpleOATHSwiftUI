@@ -10,7 +10,7 @@
 		51003CAD24EFB690004CE043 /* Future+Bag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51003CAC24EFB690004CE043 /* Future+Bag.swift */; };
 		5154029F2487F8E2005D3695 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5154029E2487F8E2005D3695 /* AppDelegate.swift */; };
 		515402A12487F8E2005D3695 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515402A02487F8E2005D3695 /* SceneDelegate.swift */; };
-		515402A32487F8E2005D3695 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515402A22487F8E2005D3695 /* ContentView.swift */; };
+		515402A32487F8E2005D3695 /* CredentialListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515402A22487F8E2005D3695 /* CredentialListView.swift */; };
 		515402A52487F8E3005D3695 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 515402A42487F8E3005D3695 /* Assets.xcassets */; };
 		515402A82487F8E3005D3695 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 515402A72487F8E3005D3695 /* Preview Assets.xcassets */; };
 		515402AB2487F8E3005D3695 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 515402A92487F8E3005D3695 /* LaunchScreen.storyboard */; };
@@ -50,7 +50,7 @@
 		5154029B2487F8E2005D3695 /* SimpleOATHSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleOATHSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5154029E2487F8E2005D3695 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		515402A02487F8E2005D3695 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		515402A22487F8E2005D3695 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		515402A22487F8E2005D3695 /* CredentialListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialListView.swift; sourceTree = "<group>"; };
 		515402A42487F8E3005D3695 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		515402A72487F8E3005D3695 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		515402AA2487F8E3005D3695 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -107,7 +107,7 @@
 				515402C32488E2BE005D3695 /* SimpleOATHSwiftUI.entitlements */,
 				5154029E2487F8E2005D3695 /* AppDelegate.swift */,
 				515402A02487F8E2005D3695 /* SceneDelegate.swift */,
-				515402A22487F8E2005D3695 /* ContentView.swift */,
+				515402A22487F8E2005D3695 /* CredentialListView.swift */,
 				515402B22487FA0E005D3695 /* CredentialView.swift */,
 				515402B424884B03005D3695 /* Credential.swift */,
 				515402C72488E6FC005D3695 /* YubiKitWrapper.swift */,
@@ -274,7 +274,7 @@
 				515402A12487F8E2005D3695 /* SceneDelegate.swift in Sources */,
 				516D4B17249B94120069D3E3 /* Publisher+ShareReplay.swift in Sources */,
 				516D4B12249B511B0069D3E3 /* MGMT.swift in Sources */,
-				515402A32487F8E2005D3695 /* ContentView.swift in Sources */,
+				515402A32487F8E2005D3695 /* CredentialListView.swift in Sources */,
 				51003CAD24EFB690004CE043 /* Future+Bag.swift in Sources */,
 				516D4B0E249B50740069D3E3 /* FIDO2.swift in Sources */,
 				516D4B14249B77EF0069D3E3 /* YubiKitManager+Extensions.swift in Sources */,
